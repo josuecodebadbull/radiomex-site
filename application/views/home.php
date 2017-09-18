@@ -5,6 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Radiomex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>includes/css/bootstrap.min.css">
 	<link href="<?=base_url()?>includes/css/flexslider.css" rel="stylesheet" type="text/css" />
 	<link href="<?=base_url()?>includes/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
@@ -60,9 +61,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		});
 
 		function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 19.447432, lng: -99.1600977};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 16,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -98,12 +99,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</a>
 					</div><!-- //LOGO -->
 					
-					<!-- SEARCH FORM -->
+					<!-- SEARCH FORM 
 					<div id="search-form" class="pull-right">
 						<form method="get" action="#">
 							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
 						</form>
-					</div><!-- SEARCH FORM -->
+					</div>
+					SEARCH FORM -->
 					
 					<!-- MENU -->
 					<div class="pull-right">
@@ -142,12 +144,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<p class="title1 captionDelay2 FromTop cwhite">Sistemas</p>
 							<p class="title2 captionDelay4 FromTop cwhite">de Seguridad</p>
 							<!-- <p class="title3 captionDelay6 FromTop cwhite">Templates</p> -->
-							<p class="title4 captionDelay7 FromBottom cwhite">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
+							<p class="title4 captionDelay7 FromBottom cwhite">Empresa y Negocio , Geolocalización , C.C.T.V. ó Videovigilancia , Control de acceso , Intrusión y Automatización</p>
 						</div>
-						<a class="slide_btn FromRight" href="javascript:void(0);" >Saber más</a>
+						<a class="slide_btn FromRight" href="<?php base_url()?>/service" >Saber más</a>
 					<li class="slide2">
 						<div class="flex_caption1">
-							<p class="title1 captionDelay6 FromLeft">Radiocomunicaciones</p>
+							<p class="title1 captionDelay1 FromBottom">Redes </p>
+							
 							<!-- <p class="title2 captionDelay4 FromLeft">Design</p> -->
 							<!-- <p class="title3 captionDelay2 FromLeft">Theme</p> -->
 							<p class="title4 captionDelay7 FromLeft">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
@@ -156,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</li>
 					<li class="slide3">
 						<div class="flex_caption1">
-							<p class="title1 captionDelay1 FromBottom">Redes </p>
+							<p class="title1 captionDelay6 FromLeft">Radiocomunicaciones</p>
 							<!-- <p class="title2 captionDelay2 FromBottom">Video</p>
 							<p class="title3 captionDelay3 FromBottom">Background</p> -->
 							<p class="title4 captionDelay5 FromBottom">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
@@ -165,6 +168,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<!-- VIDEO BACKGROUND -->
 						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+						<!-- //VIDEO BACKGROUND -->
+					</li>
+					<li class="slide4">
+						<div class="flex_caption1">
+							<p class="title2 captionDelay4 FromBottom">Soluciones integrales en</p> <br>
+							<p class="title1 captionDelay1 FromTop cwhite">Iluminación</p>
+							
+							<!-- <p class="title2 captionDelay2 FromBottom">Video</p>
+							<p class="title3 captionDelay3 FromBottom">Background</p> -->
+							<p class="title4 captionDelay5 FromBottom">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
+						</div>
+						<a class="slide_btn FromRight" href="javascript:void(0);" >Saber más</a>
+						
+						<!-- VIDEO BACKGROUND -->
+						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide4',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
 						<!-- //VIDEO BACKGROUND -->
 					</li>
 				</ul>
@@ -192,39 +210,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
 							<a class="services_item" href="javascript:void(0);" >
-								<p><b>Easy</b> Customize</p>
-								<span>Quality and very comfortable design, does not hurt the eyes and pleasant to use.</span>
+								<p><b>Calidad</p>
+								<span>Excelente servicio</span>
 							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
 							<a class="services_item" href="javascript:void(0);" >
-								<p><b>Modern</b> Design</p>
-								<span>Quality and unique design that meets all the requirements and trends of modern web design.</span>
+								<p><b>Experiencia</b></p>
+								<span>un chingo de experiencia que tenemos </span>
 							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
 							<a class="services_item" href="javascript:void(0);" >
-								<p><b>Responsive</b> Design</p>
-								<span>Design that will be equally beautifully displayed on all your devices, tablet, smartphone or computer.</span>
+								<p><b>Garantia</b></p>
+								<span>Garantia, respaldamos servicio , mantenimiento correctivo</span>
 							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
 							<a class="services_item" href="javascript:void(0);" >
-								<p><b>Free</b> Updates & Support</p>
-								<span>Hour and great support template. You can always ask a question and we will help you.</span>
+								<p><b>Capacitados</b> y certificados</p>
+								<span>Contamos con las mejores certificaciones del mundo mundial.</span>
 							</a>
 						</div>
 					</div><!-- //ROW -->
 				</div><!-- //CONTAINER -->
 			</div><!-- //SERVICES -->
 			
-			<!-- CLEAN CODE -->
+			<!-- CLEAN CODE 
 			<div class="cleancode_block">
 				
-				<!-- CONTAINER -->
+				
 				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
 					
-					<!-- CASTOM TAB -->
+					
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade in active clearfix" id="tab1">
 							<p class="title"><b>Clean</b> Code</p>
@@ -258,9 +276,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Documentation</span></a></li>
 						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Quality</span></a></li>
 						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>Support</span></a></li>
-					</ul><!-- CASTOM TAB -->
-				</div><!-- //CONTAINER -->
-		º	</div><!-- //CLEAN CODE -->
+					</ul> //CASTOM TAB
+				</div>//CONTAINER 
+			</div> //CLEAN CODE -->
+
+
 			
 			<!-- MULTI PURPOSE -->
 			<div class="purpose_block">
@@ -414,37 +434,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div><!-- //work7 -->
 				</div><!-- //PROJECTS SLIDER -->
 			</div>
-			
-			
-			<!-- OUR CLIENTS -->
-			<div class="our_clients">
-			
-				<!-- CONTAINER -->
-				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-					
-					<!-- ROW -->
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/1.jpg" alt="" />
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/2.jpg" alt="" />
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/3.jpg" alt="" />
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/4.jpg" alt="" />
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/5.jpg" alt="" />
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="<?=base_url()?>includes/images//clients/6.jpg" alt="" />
-						</div>
-					</div><!-- //ROW -->
-				</div><!-- CONTAINER -->
-			</div><!-- //OUR CLIENTS -->
 		</section><!-- //PROJECTS -->
 		
 		
@@ -453,7 +442,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 			<!-- CONTAINER -->
 			<div class="container">
-				<h2><b>Our</b> Team</h2>
+				<h2><b>Nuestro</b> Equipo</h2>
 				
 				<!-- ROW -->
 				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -469,7 +458,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
-										<p>Sarah Brown</p>
+										<p>Roberto Sarabia</p>
 										<span>Director</span>
 									</div>
 								</div>
@@ -488,7 +477,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
-										<p>David Jones</p>
+										<p>Francisco Gutierrez</p>
 										<span>Creative Director</span>
 									</div>
 								</div>
@@ -508,7 +497,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
-										<p>Kate Smith</p>
+										<p>Josué Casasola</p>
 										<span>Manager</span>
 									</div>
 								</div>
@@ -537,84 +526,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 						</div><!-- crewman4 -->
-						
-						<!-- crewman5 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/5.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Jim Moss</p>
-										<span>Designer</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman5 -->
-						
-						<!-- crewman6 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/6.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>John Marks</p>
-										<span>Designer</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman6 -->
-						
-						<!-- crewman7 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/7.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Joe Mades</p>
-										<span>Developer</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman7 -->
-						
-						<!-- crewman8 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/8.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Julia Anderson</p>
-										<span>Developer</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman8 -->
 					</div><!-- TEAM SLIDER -->
 				</div><!-- //ROW -->
 			</div><!-- //CONTAINER -->
@@ -626,7 +537,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 			<!-- CONTAINER -->
 			<div class="container">
-				<h2><b>Clients</b> say about us</h2>
+				<h2><b>¿Quienes </b> somos ?</h2>
 				
 				<!-- TESTIMONIALS -->
 				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -637,19 +548,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- TESTIMONIAL1 -->
 						<div class="item">
 							<div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
-							<div class="testim_author">—  Anna Balashova, <b>Philosopher</b></div>
+							
 						</div><!-- TESTIMONIAL1 -->
 						
 						<!-- TESTIMONIAL2 -->
 						<div class="item">
 							<div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
-							<div class="testim_author">—  Anna Balashova, <b>Philosopher</b></div>
+							
 						</div><!-- TESTIMONIAL2 -->
 						
 						<!-- TESTIMONIAL3 -->
 						<div class="item">
 							<div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
-							<div class="testim_author">—  Anna Balashova, <b>Philosopher</b></div>
 						</div><!-- TESTIMONIAL3 -->
 					</div><!-- TESTIMONIALS SLIDER -->
 				</div><!-- //TESTIMONIALS -->
@@ -659,48 +569,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
 						<div class="post_item">
 							<div class="post_item_img">
-								<img src="<?=base_url()?>includes/images//blog/1.jpg" alt="" />
+								<img src="<?=base_url()?>includes/img/breather-7169.jpg" alt="" />
 								<a class="link" href="blog-post.html" ></a>
 							</div>
 							<div class="post_item_content">
-								<a class="title" href="blog-post.html" >Inteligent Transitions In UX Design</a>
-								<ul class="post_item_inf">
-									<li><a href="javascript:void(0);" >Anna</a> |</li>
-									<li><a href="javascript:void(0);" >Photography</a> |</li>
-									<li><a href="javascript:void(0);" >10 Comments</a></li>
-								</ul>
+								<a class="title" href="blog-post.html" > Cuida tu local o negocio con los sistemas mas modernos</a>
+								
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
 						<div class="post_item">
 							<div class="post_item_img">
-								<img src="<?=base_url()?>includes/images//blog/2.jpg" alt="" />
+								<img src="<?=base_url()?>includes/img/breather-181280.jpg" alt="" />
 								<a class="link" href="blog-post.html"></a>
 							</div>
 							<div class="post_item_content">
-								<a class="title" href="blog-post.html" >Recent trends in storytelling</a>
-								<ul class="post_item_inf">
-									<li><a href="javascript:void(0);" >Anna</a> |</li>
-									<li><a href="javascript:void(0);" >Web Design</a> |</li>
-									<li><a href="javascript:void(0);" >No comment</a></li>
-								</ul>
+								<a class="title" href="blog-post.html" >Siempre puedes estar seguro que tu hogar esta a salvo con las sistemas de videovigilancia</a>
+								
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
 						<div class="post_item">
 							<div class="post_item_img">
-								<img src="<?=base_url()?>includes/images//blog/3.jpg" alt="" />
+								<img src="<?=base_url()?>includes/img/crew-88059.jpg" alt="" />
 								<a class="link" href="blog-post.html"></a>
 							</div>
 							<div class="post_item_content">
-								<a class="title" href="blog-post.html" >Supernatural FX Showreel</a>
-								<ul class="post_item_inf">
-									<li><a href="javascript:void(0);" >Anna</a> |</li>
-									<li><a href="javascript:void(0);" >Creative</a> |</li>
-									<li><a href="javascript:void(0);" >3 Comments</a></li>
-								</ul>
+								<a class="title" href="blog-post.html" >Aca otra cosa aca chida de negocios</a>
 							</div>
 						</div>
 					</div>
@@ -761,7 +658,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!-- MAPA -->
 				<div class="col-md-12">
 					<script async defer
-					    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFaOscxpZXSAZRBPPSxBSecsPmsbJG2po&callback=initMap">
 					</script>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">

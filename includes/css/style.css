@@ -2046,15 +2046,52 @@ input[type="color"]:focus {
 	color: white !important; 
 }
 
+.ultra0{
+	padding: 0px !important;
+	margin: 0px !important;
+	width: 100%;
+}
+
+#panel-img{
+	height: calc(60vh - 150px);
+	width: 100%;
+}
 
 
+.flex_caption1{
+	z-index: 1040;
+}
 
 
+.pad60{
+	padding: 60px 0px;
+}
+
+.pad60b{
+	padding: 60px 0px 120px;
+}
 
 
+.font20{
+	font-weight: 300;
+    line-height: 26px;
+    font-size: 17px;
+    color: #666;
+}
 
+.titleservice{
+	text-align: center;
+	padding-bottom: 50px;
+}
 
+.marginbtn{
+	margin: 60px 0px;
+}
 
+.services_block{
+	border-bottom: 2px solid black;
+	margin-bottom: 100px;
+}
 
 
 
