@@ -1,80 +1,5 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Radiomex</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>includes/css/bootstrap.min.css">
-	<link href="<?=base_url()?>includes/css/flexslider.css" rel="stylesheet" type="text/css" />
-	<link href="<?=base_url()?>includes/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-	<link href="<?=base_url()?>includes/css/animate.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="<?=base_url()?>includes/css/owl.carousel.css" rel="stylesheet">
-	<link href="<?=base_url()?>includes/css/style.css" rel="stylesheet" type="text/css" />
-    
-	<!-- FONTS -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
-    
-	<!-- SCRIPTS -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
-	
-	<script src="<?=base_url()?>includes/js/jquery.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/jquery.prettyPhoto.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/jquery.nicescroll.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/superfish.min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/jquery.flexslider-min.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/owl.carousel.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/animate.js" type="text/javascript"></script>
-	<script src="<?=base_url()?>includes/js/jquery.BlackAndWhite.js"></script>
-	<script src="<?=base_url()?>includes/js/myscript.js" type="text/javascript"></script>
-	<script>
-		
-		//PrettyPhoto
-		jQuery(document).ready(function() {
-			$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
-		
-		//BlackAndWhite
-		$(window).load(function(){
-			$('.client_img').BlackAndWhite({
-				hoverEffect : true, // default true
-				// set the path to BnWWorker.js for a superfast implementation
-				webworkerPath : false,
-				// for the <?=base_url()?>includes/images/ with a fluid width and height 
-				responsive:true,
-				// to invert the hover effect
-				invertHoverEffect: false,
-				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-				intensity:1,
-				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-					fadeIn: 300, // 200ms for fadeIn animations
-					fadeOut: 300 // 800ms for fadeOut animations
-				},
-				onImageReady:function(img) {
-					// this callback gets executed anytime an image is converted
-				}
-			});
-		});
 
-		function initMap() {
-        var uluru = {lat: 19.447432, lng: -99.1600977};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-		
-	</script>
-</head>
-<body>
+<body class="cuerpo">
 <!-- PRELOADER -->
 <img id="preloader" src="<?=base_url()?>includes/images/preloader.gif" alt="" />
 <!-- //PRELOADER -->
@@ -94,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- LOGO -->
 					<div class="logo pull-left">
-						<a href="index.html" >
+						<a href="/" >
 							<img id="logo" src="<?=base_url()?>includes/img/radiomex180.png">
 						</a>
 					</div><!-- //LOGO -->
@@ -132,7 +57,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div><!-- //CONTAINER -->
 		</header><!-- //HEADER -->
 		
-		
+		<!-- <div class="container">
+			<img  src="<?=base_url()?>includes/img/circle.png" alt="" />
+		</div> -->
+
 		<!-- HOME -->
 		<section id="home" class="padbot0">
 				
@@ -172,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</li>
 					<li class="slide4">
 						<div class="flex_caption1">
-							<p class="title2 captionDelay4 FromBottom">Soluciones integrales en</p> <br>
+							<p class="title2 captionDelay4 FromBottom">Soluciones Integrales en</p> <br>
 							<p class="title1 captionDelay1 FromTop cwhite">Iluminación</p>
 							
 							<!-- <p class="title2 captionDelay2 FromBottom">Video</p>
@@ -282,254 +210,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 			
-			<!-- MULTI PURPOSE -->
-			<div class="purpose_block">
-				
-				<!-- CONTAINER -->
-				<div class="container">
-					
-					<!-- ROW -->
-					<div class="row">
-					
-						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
-							<h2><b>Multi-purpose</b> WordPress Theme</h2>
-							<p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-							<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">Byu This theme</span></a>
-							<a class="btn" href="javascript:void(0);" >View more templates</a>
-						</div>
-						
-						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
-							<img class="ipad_img1" src="<?=base_url()?>includes/img/scb3000.png" alt="" />
-						</div>
-					</div><!-- //ROW -->
-				</div><!-- //CONTAINER -->
-			</div><!-- //MULTI PURPOSE -->
+			
 		</section><!-- //ABOUT -->
 		
-		
-		<!-- PROJECTS -->
-		<section id="projects" class="padbot20">
-		
-			<!-- CONTAINER -->
-			<div class="container">
-				<h2><b>Featured</b> Works</h2>
-			</div><!-- //CONTAINER -->
-			
-				
-			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
-				<!-- PROJECTS SLIDER -->
-				<div class="owl-demo owl-carousel projects_slider">
-					
-					<!-- work1 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/1.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work1 -->
-					
-					<!-- work2 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/2.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work2 -->
-					
-					<!-- work3 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/3.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work3 -->
-					
-					<!-- work4 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/4.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work4 -->
-					
-					<!-- work5 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/5.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/5.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work5 -->
-					
-					<!-- work6 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/6.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/6.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work6 -->
-					
-					<!-- work7 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="<?=base_url()?>includes/images//works/7.jpg" alt="" />
-								<a class="zoom" href="<?=base_url()?>includes/images//works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="portfolio-post.html" >Ginger Beast</a>
-									<span>17 March, 2041</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work7 -->
-				</div><!-- //PROJECTS SLIDER -->
-			</div>
-		</section><!-- //PROJECTS -->
-		
-		
-		<!-- TEAM -->
-		<section id="team">
-		
-			<!-- CONTAINER -->
-			<div class="container">
-				<h2><b>Nuestro</b> Equipo</h2>
-				
-				<!-- ROW -->
-				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
-						
-					<!-- TEAM SLIDER -->
-					<div class="owl-demo owl-carousel team_slider">
-				
-						<!-- crewman1 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/1.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Roberto Sarabia</p>
-										<span>Director</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman1 -->
-						
-						<!-- crewman2 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/2.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Francisco Gutierrez</p>
-										<span>Creative Director</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman1 -->
-						
-						<!-- crewman3 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/3.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Josué Casasola</p>
-										<span>Manager</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman3 -->
-						
-						<!-- crewman4 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="<?=base_url()?>includes/images//team/4.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Peter Parker</p>
-										<span>Manager</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman4 -->
-					</div><!-- TEAM SLIDER -->
-				</div><!-- //ROW -->
-			</div><!-- //CONTAINER -->
-		</section><!-- //TEAM -->
 		
 		
 		<!-- NEWS -->
@@ -547,13 +230,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<!-- TESTIMONIAL1 -->
 						<div class="item">
-							<div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
+							<div class="testim_content">
+							Somos una empresa lider en México
+							<br><br>
+
+							</div>
 							
 						</div><!-- TESTIMONIAL1 -->
 						
 						<!-- TESTIMONIAL2 -->
 						<div class="item">
-							<div class="testim_content">“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</div>
+							<div class="testim_content">Servicios alta capacitación .</div>
 							
 						</div><!-- TESTIMONIAL2 -->
 						
@@ -604,12 +291,105 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div><!-- RECENT POSTS -->
 			</div><!-- //CONTAINER -->
 		</section><!-- //NEWS -->
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Nuestro</b> Equipo</h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="<?=base_url()?>includes/images//team/1.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Roberto Sarabia</p>
+										<span>Director</span>
+									</div>
+								</div>
+								<!-- <div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div> -->
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="<?=base_url()?>includes/images//team/2.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Francisco Gutierrez</p>
+										<span>Creative Director</span>
+									</div>
+								</div>
+								<!-- <div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void (0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+								-->
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="<?=base_url()?>includes/images//team/3.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Josué Casasola</p>
+										<span>Manager</span>
+									</div>
+								</div>
+								<!-- <div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div> -->
+							</div>
+						</div><!-- crewman3 -->
+						
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="<?=base_url()?>includes/images//team/4.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Peter Parker</p>
+										<span>Manager</span>
+									</div>
+								</div>
+								<!-- <div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div> -->
+							</div>
+						</div><!-- crewman4 -->
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+		
+		
+		
 	</div><!-- //PAGE -->
-	
-	<!-- CONTACTS -->
-	<section id="contacts">
-	</section><!-- //CONTACTS -->
-	
 	<!-- FOOTER -->
 	<footer>
 			
@@ -618,7 +398,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			<!-- ROW -->
 			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
-				
+				<!-- 
 				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
 					<h4><b>Featured</b> posts</h4>
 					<div class="recent_posts_small clearfix">
@@ -654,7 +434,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- MAPA -->
 				<div class="col-md-12">
 					<script async defer
@@ -662,42 +442,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</script>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
-					<h4><b>About</b> us</h4>
-					<p>We value people over profits, quality over quantity, and keeping it real. As such, we deliver an unmatched working relationship with our clients.</p>
-					<p>Our team is intentionally small, eclectic, and skilled; with our in-house expertise, we provide sharp and</p>
+					<h4><b>Nos </b> ubicamos :</h4>
+					<p>
+						J. Torres Bodet 125 B <br>
+						Col. Santa María la Ribera <br>
+						Del. Cuauhtémoc México D.F. C.P. 06400
+					</p>
+					<h4><b>Telefonos :<b></h4>
+					<p>
+						<a href="tel:+1525555474449"> <i class="fa fa-mobile"></i> (55) 5547-4449 </a>
+					</p>
 					<ul class="social">
-						<li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
+						<!-- <li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
 						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
 						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
-						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li> -->
+						<li><a href="https://www.google.com.mx/maps/place/RADIOMEX/@19.4465373,-99.1632145,15z/data=!4m5!3m4!1s0x85d1f8c4ddac64f7:0x262146c005269657!8m2!3d19.447432!4d-99.157909" target="_blank"><i class="map_show fa fa-map-marker"></i></a></li>
 					</ul>
 				</div>
 				
 				<div class="respond_clear"></div>
 				
-				<div class="col-lg-4 col-md-4 padbot30">
-					<h4><b>Contacts</b> Us</h4>
+				<div class="col-lg-8 col-md-8 padbot30">
+					<h4><b>Contactanos</b> para cualquier cotización o asesoría</h4>
 					
 					<!-- CONTACT FORM -->
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
 							<form id="contact-form-face" class="clearfix" action="#">
-								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
-								<input class="contact_btn" type="submit" value="Send message" />
+								<input type="text" name="name" value="Nombre" class="col-xs-12 col-md-6" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<input type="mail" name="mail" value="Correo electronico" class="col-xs-12 col-md-6" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Mensaje</textarea>
+								<input class="contact_btn" type="submit" value="Enviar mensaje" />
 							</form>
 						</div>
 					</div><!-- //CONTACT FORM -->
 				</div>
-			</div><!-- //ROW -->
-			<div class="row copyright">
-				<div class="col-lg-12 text-center">
-				
-				 <p>Crafted with <i class="fa fa-heart"></i>, <a href="http://designscrazed.org/" >Designscrazed</a></p>
-				</div>
-			
 			</div><!-- //ROW -->
 		</div><!-- //CONTAINER -->
 	</footer><!-- //FOOTER -->

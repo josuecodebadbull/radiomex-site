@@ -79,7 +79,7 @@ html[xmlns] .slides {display: block;}
 	text-align:center;
 	background-color:#fff;
 }
-.flexslider.top_slider .flex-direction-nav li a:hover {background-color:#333;}
+.flexslider.top_slider .flex-direction-nav li a:hover {background-color:#042172;}
 .flexslider.top_slider .flex-direction-nav li a.flex-prev {left:0;}
 .flexslider.top_slider .flex-direction-nav li a.flex-next {left:71px;}
 .flexslider.top_slider .flex-direction-nav li a:before {
@@ -312,7 +312,7 @@ html[xmlns] .slides {display: block;}
 /* Caption */
 .top_slider .slide1 {
 	height:100%;
-	background-image:url(../img/rishabh-varshney-138805.jpg);
+	background-image:url(../img/StockSnap_7BUYQ1UMA9.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
 }
@@ -339,7 +339,7 @@ html[xmlns] .slides {display: block;}
 
 .top_slider .slide2 {
 	height:100%;
-	background-image:url(../img/brooke-cagle-195777.jpg);
+	background-image:url(../img/redes2.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
 }
@@ -429,7 +429,7 @@ html[xmlns] .slides {display: block;}
 	color:#333;
 	background-color:#fff;
 }
-.top_slider .slide_btn:hover {background-color:#1c1c1c; color:#fff;}
+.top_slider .slide_btn:hover {background-color:#042172; color:#fff;}
 .top_slider .slide_btn:before {
 	position:absolute;
 	content: "\f105";
