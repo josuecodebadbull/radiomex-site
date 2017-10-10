@@ -38,8 +38,6 @@
 							<ul>
 								<li class="first active scroll_btn"><a href="#home" >Home</a></li>
 								<li class="scroll_btn"><a href="#about" >Acerca de nosotros</a></li>
-								<li class="first active scroll_btn"><a href="#home" >Home</a></li>
-								<li class="scroll_btn"><a href="#about" >Acerca de nosotros</a></li>
 								<!-- <li class="scroll_btn"><a href="#projects" >Projects</a></li> -->
 								<li class="scroll_btn"><a href="#team" >Equipo</a></li>
 								<!-- <li class="scroll_btn"><a href="#news" >News</a></li> -->
