@@ -86,6 +86,24 @@
 								</li> -->
 							</ul>
 						</nav>
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >Home</a></li>
+								<li class="scroll_btn"><a href="#about" >Acerca de nosotros</a></li>
+								<!-- <li class="scroll_btn"><a href="#projects" >Projects</a></li> -->
+								<li class="scroll_btn"><a href="#team" >Equipo</a></li>
+								<!-- <li class="scroll_btn"><a href="#news" >News</a></li> -->
+								<li class="scroll_btn last"><a href="#contacts" >Contacto</a></li>
+								<!-- <li class="sub-menu">
+									<a href="javascript:void(0);" >Pages</a>
+									<ul>
+										<li><a href="blog.html" >Blog</a></li>
+										<li><a href="blog-post.html" >Blog Post</a></li>
+										<li><a href="portfolio-post.html" >Portfolio Single Work</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</nav>
 					</div><!-- //MENU -->
 				</div><!-- //MENU BLOCK -->
 			</div><!-- //CONTAINER -->
